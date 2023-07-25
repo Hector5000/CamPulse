@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    /* background-color: peru; */
+    /* background:radial-gradient(circle, peru, rgb(120, 120, 62)) */
+    background-image: url(img/slide-17.jpg);
+    background-size: cover;
+}
+.adv{
+    background-color: rgb(86, 44, 44);
+    color: aquamarine;
+}
+.but{
+    border: 4px;
+    border-radius: 2px;
+    background-color: rgb(4, 62, 4);
+}
+.hey ul li{
+    display: inline-flex;
+    background-color: ;
+    text-decoration: none;
+}
+.hey{
+    border: yellow;
+    background-color: rgba(0, 128, 0, 0.557);
+    text-decoration: none;
+    margin: 0px;
+    padding: 25px;
+    color: white;
+    overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+    
+}
+.hey ul{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+
+}
+.hey ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 12px;
+}
+.hey ul li :hover{
+    background-color: rgb(148, 122, 16);
+    font-size: large;
+}
+.bi-camera::before {
+     content: "\f220";
+      }
+.pee{
+    font-size: xx-large;
+    color: red;
+    margin-right: 390px;
+}
+.pee :hover{
+    color: aqua;
+}
+.social{
+    padding-left: 270px;
+    border: 2px;
+    background-color: ;
+}
+.sos :hover{
+    color: black;
+}
+.bi bi-twitter{
+    padding-left: 50px;
+}
