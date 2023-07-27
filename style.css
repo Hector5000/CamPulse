@@ -5,9 +5,15 @@
 body{
     /* background-color: peru; */
     /* background:radial-gradient(circle, peru, rgb(120, 120, 62)) */
-    background-image: url(img/slide-17.jpg);
+    background-image: url(assets/img/slide-17.jpg);
     background-size: cover;
 }
+
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+
 .adv{
     background-color: rgb(86, 44, 44);
     color: aquamarine;
@@ -72,4 +78,8 @@ body{
 }
 .bi bi-twitter{
     padding-left: 50px;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
 }
