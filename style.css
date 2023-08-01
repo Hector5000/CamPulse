@@ -1,85 +1,167 @@
-*{
+@import url('https://fonts.googleapis.com/css?family=poppins:100,200,300,400,500,600,700');
+* {
     margin: 0%;
     padding: 0%;
 }
+
 body{
-    /* background-color: peru; */
-    /* background:radial-gradient(circle, peru, rgb(120, 120, 62)) */
-    background-image: url(assets/img/slide-17.jpg);
-    background-size: cover;
+    background-image: url(#);
 }
 
-:root{
-    --primary-color:#edf2fc;
-    --secondary-color:#212121;
+
+
+
+
+.topper{
+    background-color: #212121;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
 
-.adv{
-    background-color: rgb(86, 44, 44);
-    color: aquamarine;
+.cam{
+    color: red;
 }
-.but{
-    border: 4px;
-    border-radius: 2px;
-    background-color: rgb(4, 62, 4);
+
+.logo{
+    position: fixed;
+    left: 0px top 0px;
+   position: fixed;
+   left: 23px;
+   font-family: copper black;
+   font-size: 25px;
 }
-.hey ul li{
-    display: inline-flex;
-    background-color: ;
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
     text-decoration: none;
-}
-.hey{
-    border: yellow;
-    background-color: rgba(0, 128, 0, 0.557);
-    text-decoration: none;
-    margin: 0px;
-    padding: 25px;
-    color: white;
-    overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+    color: black;
     
 }
-.hey ul{
-    text-decoration: none;
-    color: white;
-    font-size: larger;
 
-}
-.hey ul li a{
+.nav li a{
     text-decoration: none;
-    color: white;
-    margin: 12px;
+    color: #edf2fc;
 }
-.hey ul li :hover{
-    background-color: rgb(148, 122, 16);
-    font-size: large;
+
+.nav li a :hover{
+    color: #000000;
+    font-weight: 200;
 }
-.bi-camera::before {
-     content: "\f220";
-      }
-.pee{
-    font-size: xx-large;
-    color: red;
-    margin-right: 390px;
-}
-.pee :hover{
-    color: aqua;
-}
-.social{
-    padding-left: 270px;
-    border: 2px;
-    background-color: ;
-}
-.sos :hover{
+
+.nav :hover{
     color: black;
+    font-weight: 500;
 }
-.bi bi-twitter{
-    padding-left: 50px;
+
+.social{
+    color: #edf2fc;
+    position: fixed;
+    right: 18px;
 }
-#icon{
+
+
+.bi-camera::before {
+    content: "\f220";
+}
+
+#icon {
     width: 30px;
     cursor: pointer;
 }
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.c-item{
+    height: 480px;
+}
+
+.c-slid{
+    margin-top: 80px;
+}
+
+.m-cover{
+    background: #3333;
+    font-family: 'poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.cover{
+    width: 900px;
+    height: 400px;
+    /* background: #000; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    
+}
+
+.box{
+    margin: 10px;
+    width: 800px;
+    height: 400px;
+    box-shadow: -1px 0 10px #000000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    
+}
+
+.box img{
+    border-top-left-radius: 30px;      
+    border-top-right-radius: 30px;      
+}
+
+.mid{
+    background-image: url(assets/img/camera-photography-lens-black-zoom-canon-product-black-background-wallpaper-preview.jpg);
+    background-position: center;
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    height: 500px;
+    width: 100%;
+}
+
+.mid-tex{
+    padding-top: 230px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    
+}
+
+.site{
+    padding-top: 50px;
+    padding-left: 100px;
+    background-color: #edf2fc;
+    height: 200px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.site img{
+    height: 140px;
+    width: 160px;
+    border-radius: 20px;
+}
+
+
+
+
