@@ -12,34 +12,60 @@
   <script src="https://:ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrap/3.4.1/js/bootsrap.min.js"></script>
   <title>CAMPULSE</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/110827_moon_icon.png">
+  <link rel="icon" type="image/x-icon" href="assets/img/iconcam3.png">
 </head>
 
-<body style="background-color: b;">
+<body>
   <header class="fixed-top topper">
 
     <div class="logo">
       <i class="bi bi-camera cam"><span style="color: white; font-family: Cooper Black; ">CAMPULSE</span></i>
     </div>
-
-    <ul class="bi bi-list mobile-nav-toggle nav">
-      <li class="but"> <a href="home.html">home</a></li>
-      <li class="but"> <a href="gall.html">gallery</a></li>
-      <li class="but"> <a href="contact.html">contact us</a></li>
-      <li class="but"> <a href="services.html">services</a></li>
-      <li class="but"> <a href="sign.html">sign in</a></li>
+    
+    <ul class="navgate"   >
+      <li class="hideOnMobile but"> <a href="home.html">home</a></li>
+      <li class="hideOnMobile but"> <a href="about.html">about</a></li>
+      <li class="hideOnMobile but"> <a href="gall.html">gallery</a></li>
+      <li class="hideOnMobile but"> <a href="contact.html">contact us</a></li>
+      <li  class="hideOnMobile but"> <a href="services.html">services</a></li>
     </ul>
+    <li onclick=showSidebar() > <a href="#"><i class="bi bi-justify burg"></i></a></li>
+    
+<!-- <div class="close menu"><i class="bi bi-justify"></i></div> -->
 
     <div class="social">
-      <a><i class="bi bi-linkedin von"></i></a>
-      <a><i class="bi bi-twitter von"></i></a>
-      <a><i class="bi bi-facebook von"></i></a>
-      <a><i class="bi bi-instagram von"></i></a>
+      <a href="https://www.linkedin.com/"><i class="bi bi-linkedin von"></i></a>
+      <a href="https://www.twiter.com/"><i class="bi bi-twitter von"></i></a>
+      <a href="https://www.facebook.com/camiecarlie"><i class="bi bi-facebook von"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram von"></i></a>
     </div>
 
 
-  </header>
-  <main>
+    <div class="sidebar">
+      <ul class="sdbar">
+        <li onclick=hideSidebar()><i class="bi bi-x"></i><a href="home.html"></a></li>
+        <li class="cut"> <a href="home.html">home</a></li>
+        <li class="cut"> <a href="about.html">about</a></li>
+        <li class="cut"> <a href="gall.html">gallery</a></li>
+        <li class="cut"> <a href="contact.html">contact us</a></li>
+        <li class="cut"> <a href="services.html">services</a></li>
+        
+      </ul>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/"><i class="bi bi-linkedin von"></i></a>
+        <a href="https://www.twiter.com/"><i class="bi bi-twitter von"></i></a>
+        <a href="https://www.facebook.com/camiecarlie"><i class="bi bi-facebook von"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram von"></i></a>
+      </div>
+      
+  <!-- <div class="close menu"><i class="bi bi-justify"></i></div> -->
+  
+      
+    </div>
+
+
+  </header>  <main>
     <main id="main" data-aos="fade" data-aos-delay="1500">
       <div class="kal">
         <!-- ======= End Page Header ======= -->
@@ -172,8 +198,100 @@
   </main>
   <footer>
 
+    <div>
+      <button id="scrollToTopButton">Back to Top</button>
+    </div>
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Campulse</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +123 9030153429<br>
+              <strong>Email:</strong> mbajohnpaul47@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="home.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="services.html">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Campulse</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          
+          Designed by <a href="#">Johnpaul</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
   </footer>
 
+</body>
+<script src="scripts.js">
+
+</script>
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+</script>
+
+</html>
 </body>
 <script src="scripts.js">
 

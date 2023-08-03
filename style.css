@@ -62,16 +62,11 @@ body{
 }
 
 .navgate :hover{
-    color: black;
+    color: orange;
     font-weight: 500;
     text-decoration: none;
     list-style: none;
-    border: 2px solid white;
-    background-color: #ececec;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 5px;
-    padding-right: 22px;
+   
 }
 
 .but{
@@ -91,6 +86,7 @@ body{
     position: fixed;
     right: 18px;
     text-decoration: none;
+    display: flex;
 }
 
 .social a{
@@ -162,7 +158,7 @@ body{
   font-size: 26px;
   color: white;
   display: flex;
-  padding-left: 100%;
+  padding-left: 600%;
   text-decoration: none;
 }
 
@@ -198,6 +194,9 @@ body{
       display: flex;
     }
     
+    .social{
+      display: none;
+    }
 }
 
 .c-img{
@@ -266,10 +265,10 @@ body{
     }
 
     .box{
-      width: 50%;
+      width: 70%;
     }
     .box img{
-      width: 70%;
+      width: 100%;
     }
     .mid{
       font-size: 30px;
@@ -500,7 +499,7 @@ body{
 }
 
 .kol{
-  background-color: #2cbc85;
+  background-color: rgb(247, 123, 78);
 }
 
 .kal{
@@ -621,6 +620,12 @@ body{
   padding: 0 10%;
 }
 
+@media screen and (max-width :800px) {
+  .home{
+    background: url(assets/img/mike5.jpg);
+  }
+}
+
 .home-content {
   max-width: 600px;
 }
@@ -640,6 +645,7 @@ body{
   font-size: 16px;
   margin: 20px 0 40px;
   line-height: 1.2;
+  color: #ececec;
 }
 
 .home-content .btn-bx{
