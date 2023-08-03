@@ -21,19 +21,40 @@
     <div class="logo">
       <i class="bi bi-camera cam"><span style="color: white; font-family: Cooper Black; ">CAMPULSE</span></i>
     </div>
-
-    <ul class="bi bi-list mobile-nav-toggle nav">
-      <li class="but"> <a href="home.html">home</a></li>
-      <li class="but"> <a href="gall.html">gallery</a></li>
-      <li class="but"> <a href="contact.html">contact us</a></li>
-      <li class="but"> <a href="sign.html">sign in</a></li>
+    
+    <ul class="nav"   >
+      <li class="hideOnMobile but"> <a href="home.html">home</a></li>
+      <li class="hideOnMobile but"> <a href="about.html">about</a></li>
+      <li class="hideOnMobile but"> <a href="gall.html">gallery</a></li>
+      <li class="hideOnMobile but"> <a href="contact.html">contact us</a></li>
+      <li  class="hideOnMobile but"> <a href="services.html">services</a></li>
+      <li onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
+    
+<!-- <div class="close menu"><i class="bi bi-justify"></i></div> -->
 
     <div class="social">
-      <a><i class="bi bi-linkedin von"></i></a>
-      <a><i class="bi bi-twitter von"></i></a>
-      <a><i class="bi bi-facebook von"></i></a>
-      <a><i class="bi bi-instagram von"></i></a>
+      <a href="linkedin.com"><i class="bi bi-linkedin von"></i></a>
+      <a href="twitter.com"><i class="bi bi-twitter von"></i></a>
+      <a href="facebook.com"><i class="bi bi-facebook von"></i></a>
+      <a href="instagram.com"><i class="bi bi-instagram von"></i></a>
+    </div>
+
+
+    <div class="sidebar">
+      <ul class="sdbar">
+        <li onclick=hideSidebar()> <a href="home.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li class="but"> <a href="home.html">home</a></li>
+        <li class="but"> <a href="about.html">about</a></li>
+        <li class="but"> <a href="gall.html">gallery</a></li>
+        <li class="but"> <a href="contact.html">contact us</a></li>
+        <li class="but"> <a href="services.html">services</a></li>
+        
+      </ul>
+      
+  <!-- <div class="close menu"><i class="bi bi-justify"></i></div> -->
+  
+      
     </div>
 
 
@@ -52,7 +73,7 @@
           <div class="carousel-caption top-0 mt-4 ">
             <p class="mt-5 fs-3 text-uppercase">DISCOVER THE BEAUTIFUL WORLD</p>
             <H1 class="display-1 fw-bolder text-capitalize">we got the best cameras with smooth and good lens.</H1>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            <button class="btn btn-warning px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
               data-bs-target="#booking-modal">BOOK A CAM MAN</button>
           </div>
         </div>
@@ -62,7 +83,7 @@
             <p class="mt-5 fs-3 text-uppercase">DISCOVER THE BEAUTIFUL WORLD</p>
             <H1 class="display-1 fw-bolder text-capitalize">Some representative placeholder content for the first slide.
             </H1>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">BOOK A CAM MAN</button>
+            <button class="btn btn-warning px-4 py-2 fs-5 mt-5">BOOK A CAM MAN</button>
           </div>
         </div>
         <div class="carousel-item c-item">
@@ -71,7 +92,7 @@
             <p class="mt-5 fs-3 text-uppercase">DISCOVER THE BEAUTIFUL WORLD</p>
             <H1 class="display-1 fw-bolder text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
               fugit eligendi doloribus.</H1>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">BOOK A CAM MAN</button>
+            <button class="btn btn-warning px-4 py-2 fs-5 mt-5">BOOK A CAM MAN</button>
           </div>
         </div>
       </div>
@@ -84,6 +105,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+
     <div class="m-cover">
       <div class="cover">
         <div class="box">
@@ -99,7 +122,7 @@
           </p>
         </div>
         <div class="box">
-          <span style="border-top-right-radius: 20px;"><img src="assets/img/cam2.jpg" height="200px"  width="300px" alt=""></span>
+          <span style="border-top-right-radius: 20px;"><img src="assets/img/ground.jpg" height="200px"  width="300px" alt=""></span>
           <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
           <p>ipsa ab alias neque molestiae ex assumenda eaque deserunt quasi ratione aperiam. Dolores, laborum minus.
           </p>
@@ -109,10 +132,10 @@
 
     <div class="mid">
       <span class="mid-tex">BOOK A CAM MAN TODAY</span>
-      <a href=""><center><button class="btn btn-primary"> BOOK CAM MAN</button></center></a>
+      <a href=""><center><button class="btn btn-warning"> BOOK CAM MAN</button></center></a>
     </div>
 
-    <div class="site">
+    <!-- <div class="site">
       <img src="assets/img/iapple.jpg" alt="">
       <img src="assets/img/isamsung.jpg" alt="">
       <img src="assets/img/ihp.jpg" alt="">
@@ -120,20 +143,173 @@
       <img src="assets/img/icoke.jpg" alt="">
       <img src="assets/img/ilenovo.jpg" alt="">
       <img src="assets/img/iinfinix.jpg" alt="">
-    </div>
+    </div> -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Clients</h2>
+        </div>
+
+        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/client-1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/client-2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/client-3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/client-4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/client-6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/client-7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/client-8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/client-5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
 
     <div class="newsform">
-      <h3>Join Our Newsletter</h3>
-      <p>"subscribe to our Newsletter to receive updates</p>
-      <form action="https:email"><input type="" height="40px" width="120px"></form>
-      <button class="btn btn-primary">Subscribe</button>
+      <h3>Join Our Newsletter<h3>
+      <h3>"subscribe to our Newsletter to receive updates</h3>
+      <form action="https:email"><input type="" style="font-family: Times New Roman; font-weight: 300;" height="40px" placeholder="YOUR EMAIL" width="120px"></form>
+      <button class="btn btn-warning">Subscribe</button>
     </div>
 
+    
+
+    
   </main>
+  <footer>
+
+    <div>
+      <button id="scrollToTopButton">Back to Top</button>
+    </div>
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Campulse</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +123 9030153429<br>
+              <strong>Email:</strong> mbajohnpaul47@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="home.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="services.html">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Campulse</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          
+          Designed by <a href="#">Johnpaul</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  </footer>
 
 </body>
 <script src="scripts.js">
 
+</script>
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
 </script>
 
 </html>
