@@ -283,7 +283,7 @@ body{
 .mid{
   padding-top: 230px;
   padding-bottom: 230px;
-    background-image: url(assets/img/camera-photography-lens-black-zoom-canon-product-black-background-wallpaper-preview.jpg);
+    background-image: url(assets/img/logo.png);
     background-position: center;
     color: white;
     font-size: 80px;
@@ -1017,7 +1017,7 @@ body{
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: orange;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1037,7 +1037,7 @@ body{
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid orange;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1087,6 +1087,10 @@ body{
 }
 
 .cont{
+  margin-top: 100px;
+}
+
+.tcps{
   margin-top: 100px;
 }
 
